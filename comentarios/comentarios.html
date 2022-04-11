@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurante Pé de Fava - Comentários</title>
-    <link rel="stylesheet" href="comentarios.css">
-</head>
-<body>
+    <link rel="stylesheet" href="comentarios.css" />
+  </head>
+  <body>
     <div class="nav-container">
       <div class="wrapper">
         <nav>
@@ -15,15 +15,15 @@
 
           <ul class="nav-items">
             <li>
-              <a href="#">TELA INICIAL</a>
+              <a href="/index.html">TELA INICIAL</a>
             </li>
 
             <li>
-              <a href="#">CARDÁPIO</a>
+              <a href="/cardapio/cardapio.html">CARDÁPIO</a>
             </li>
 
             <li>
-              <a href="#">COMENTÁRIOS</a>
+              <a href="/comentarios/comentarios.html">COMENTÁRIOS</a>
             </li>
           </ul>
         </nav>
@@ -34,37 +34,52 @@
       <div class="wrapper">
         <header>
           <div class="background-form">
-              <h1>
-                  Envie seu comentário
-              </h1>
+            <h1>Envie seu comentário</h1>
 
-              <form>
-                <h2>Dados Pessoais:</h2>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" required><br>
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                
-                <h2>Sexo:</h2>
-                <input type="radio" id="sexoM" name="sexo" value="M">
-                <label for="sexo">Masculino</label>
+            <form>
+              <h2>Dados Pessoais:</h2>
+              <label for="nome">Nome:</label><br />
+              <input type="text" id="nome" name="nome" required /><br />
+              <label for="email">E-mail:</label><br />
+              <input type="email" id="email" name="email" required /><br />
 
-                <input type="radio" id="sexoF" name="sexo" value="F">
-                <label for="sexoF">Feminino</label>
-                <br>
-                <h2>Unidade do restaurante:</h2>
-                
-                <input type="radio" id="unidadeCentral" name="unidade" value="Setor Central" required>
-                <label for="unidadeCentral">Setor Central</label>
-                <input type="radio" id="unidadeJdGoias" name="unidade" value="Setor Jardim Goiás" required>
-                <label for="unidadeJdGoias">Setor Jardim Goiás</label>
-                <br>
-                <br>
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                <br>
-                <input type="submit">
-              </form>
+              <h2>Sexo:</h2>
+              <input type="radio" id="sexoM" name="sexo" value="M" />
+              <label for="sexoM">Masculino</label>
+
+              <input type="radio" id="sexoF" name="sexo" value="F" />
+              <label for="sexoF">Feminino</label>
+              <br />
+              <h2>Unidade do restaurante:</h2>
+
+              <input
+                type="radio"
+                id="unidadeCentral"
+                name="unidade"
+                value="Setor Central"
+                required
+              />
+              <label for="unidadeCentral">Setor Central</label>
+              <input
+                type="radio"
+                id="unidadeJdGoias"
+                name="unidade"
+                value="Setor Jardim Goiás"
+                required
+              />
+              <label for="unidadeJdGoias">Setor Jardim Goiás</label>
+              <br />
+              <br />
+              <label for="mensagem">Mensagem:</label><br />
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <br />
+              <input type="submit" />
+            </form>
           </div>
         </header>
       </div>
@@ -81,6 +96,5 @@
         </h1>
       </div>
     </footer>
-
   </body>
 </html>

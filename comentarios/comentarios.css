@@ -14,6 +14,7 @@ body{
 
   background-position-x: -159px;
   background-position-y: 720px;
+  animation: transitionIn 0.20s;
 }
 
 /* Navegação*/
@@ -101,3 +102,14 @@ form h2{
     font-weight: 600;
 }
 
+@keyframes transitionIn{
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}

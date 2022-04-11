@@ -12,6 +12,7 @@ body{
   background-position: right;
   background-size: contain;
   background-size: cover;
+  animation: transitionIn 0.20s;
 }
 
 /* Navegação*/
@@ -52,6 +53,7 @@ nav ul{
 }
 .nav-items li a:hover{
   color: #DAB041;
+  
 }
 
 footer h1{
@@ -92,11 +94,9 @@ font-weight: 800;
 font-size: 48px;
 line-height: 59px;
 display: flex;
-
-
-
 color: #DAB041;
 }
+
 header p{
 font-family: 'Montserrat', sans-serif;
 font-style: normal;
@@ -117,8 +117,24 @@ header a{
   padding: 1%;
   display:inline-block;
   margin-top: 5px;
-  
+  cursor:pointer;
   border-radius: 30px;
   border: 5px solid #DAB041;
 
+}
+.historia{
+  display: none;
+  animation: transitionIn 0.20s;
+}
+
+@keyframes transitionIn{
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }

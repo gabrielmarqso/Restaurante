@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,15 +15,15 @@
 
           <ul class="nav-items">
             <li>
-              <a href="#">TELA INICIAL</a>
+              <a href="/index.html">TELA INICIAL</a>
             </li>
 
             <li>
-              <a href="#">CARDÁPIO</a>
+              <a href="/cardapio/cardapio.html">CARDÁPIO</a>
             </li>
 
             <li>
-              <a href="#">COMENTÁRIOS</a>
+              <a href="/comentarios/comentarios.html">COMENTÁRIOS</a>
             </li>
           </ul>
         </nav>
@@ -35,12 +35,21 @@
         <header>
           <div class="hero-container">
             <h1>Verdadeiro significado</h1>
-            <h2>de comida bem feita</h1>
+            <h2>de comida bem feita</h2>
             <p>
               Prezamos pela satisfação do cliente, oferecendo uma ótima comida
               junto a um ótimo atendimento.
             </p>
-            <a href="#">NOSSA HISTÓRIA</a>
+            <a onclick="show_hide()"
+              >NOSSA HISTÓRIA
+              <p class="historia" id="historia">
+                <br />
+                Os principais memes de Pesadelo na Cozinha são atribuídos ao
+                personagem mais famoso de todas as edições: Fábio,
+                ex-proprietário do restaurante Pé de Fava e participante da 2°
+                temporada do programa.
+              </p></a
+            >
           </div>
           <div class="hero-image">
             <img src="images/comida.png" alt="Foto de prato com comida" />
@@ -61,6 +70,15 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script>
+      function show_hide() {
+        var a = document.getElementById('historia')
+        if (a.style.display === 'none') {
+          a.style.display = 'inline'
+        } else {
+          a.style.display = 'none'
+        }
+      }
+    </script>
   </body>
 </html>

@@ -15,6 +15,7 @@ body{
 
   background-position-x: -159px;
   background-position-y: 720px;
+  animation: transitionIn 0.20s;
 }
 
 /* Navegação*/
@@ -172,50 +173,14 @@ header .title{
     border-radius: 10px;
 }
 
-/* header h1{
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 20px;
-line-height: 59px;
+@keyframes transitionIn{
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
 
-display: flex;
-
-color: #0E3D32;
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }
-
-header h2{
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 12px;
-line-height: 59px;
-display: flex;
-color: #DAB041;
-}
-
-header p{
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-color: black;
-}
-
-header a{
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  text-decoration: none;
-  color: #000000;
-  padding: 1%;
-  display:inline-block;
-  margin-top: 5px;
-  
-  border-radius: 30px;
-  border: 5px solid #DAB041;
-
-} */
