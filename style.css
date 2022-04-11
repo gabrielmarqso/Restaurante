@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  font-family: Roboto, sans-serif;
+  background: #E5E5E5 url("images/circles-background.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-size: cover;
+}
+
+/* Navegação*/
+
+.nav-container{
+  height: 184px;
+
+}
+.wrapper{
+  width: 1255px;
+  margin: 0 auto;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 184px;
+  margin-top: 50px;
+}
+nav ul{
+  display: flex;
+  margin-top: -100px;
+  margin-right: 100px;
+}
+
+.nav-items li{
+  list-style: none;
+  margin-right: 71px;
+
+}
+.nav-items li a{
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+
+}
+footer h1{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+/*Header*/
+
+.header-container{
+  display: flex;
+  align-items: center;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1{
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 59px;
+
+display: flex;
+
+
+
+color: #0E3D32;
+}
+header h2{
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 59px;
+display: flex;
+
+
+
+color: #DAB041;
+}
+header p{
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+color: black;
+}
+
+header a{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px;
+  text-decoration: none;
+  color: #000000;
+  padding: 1%;
+
+  border-radius: 30px;
+  border: 5px solid #DAB041;
+
+}
